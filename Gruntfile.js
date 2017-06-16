@@ -173,7 +173,7 @@ module.exports = function(grunt) {
                             replacement: '<%= CONF.concat.destSlug %>'
                         }, {
                             match: 'version',
-                            replacement: '<%= pkg.version %>'
+                            replacement: '<%= pkg.version %>-' + Date.now()
                         }, {
                             match: 'description',
                             replacement: '<%= pkg.description %>'
